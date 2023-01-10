@@ -29,6 +29,7 @@
     width: 50px;
     height: 50px;
     background: #ff6a95;
+    background: #c788ea;
     color: #fff;
     border: 1px #eee solid;
     border-radius: 50%;

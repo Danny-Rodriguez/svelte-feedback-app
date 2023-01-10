@@ -25,6 +25,7 @@
 
   .secondary {
     background: #ff6a95;
+    background: #c788ea;
   }
 
   button:hover {

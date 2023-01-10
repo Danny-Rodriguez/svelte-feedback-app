@@ -4,16 +4,16 @@ export const FeedbackStore = writable([
   {
     id: 1,
     rating: 10,
-    text: "The service as amazing! The waiters were very prompt and the food was very good!"
+    text: "Danny is a great web developer! He made my site for me just the way I wanted!"
   },
   {
     id: 2,
     rating: 9,
-    text: "I'm going to need to bring my family back here for a celebration!"
+    text: "My website needed some work on the UI, Danny understood how to commnunicate UI design in a concise and effective matter."
   },
   {
     id: 3,
     rating: 8,
-    text: "I loved the decore of the place. Very great European inspired design."
+    text: "I hired Danny to make a fullstack application because he had both the frontend and backend skills needed to get the job done. Highly recommend him!"
   }
 ]);

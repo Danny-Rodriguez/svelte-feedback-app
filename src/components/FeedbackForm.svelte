@@ -43,7 +43,7 @@
 
 <Card>
   <header>
-    <h2>How would you rate your service with us?</h2>
+    <h2>How would you rate Danny's service?</h2>
   </header>
 
   <form on:submit|preventDefault={handleSubmit}>
@@ -95,5 +95,6 @@
     padding-top: 10px;
     text-align: center;
     color: rebeccapurple;
+    /* color: green; */
   }
 </style>
