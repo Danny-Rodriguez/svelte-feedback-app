@@ -13,43 +13,43 @@
 <ul class="rating">
   <li>
     <input type="radio" id="num1" name="rating" value="1" on:change={onChange} checked={selected === 1} />
-    <label for="num1">1</label>
+    <label for="num1"><span>1</span></label>
   </li>
   <li>
     <input type="radio" id="num2" name="rating" value="2" on:change={onChange} checked={selected === 2} />
-    <label for="num2">2</label>
+    <label for="num2"><span>2</span></label>
   </li>
   <li>
     <input type="radio" id="num3" name="rating" value="3" on:change={onChange} checked={selected === 3} />
-    <label for="num3">3</label>
+    <label for="num3"><span>3</span></label>
   </li>
   <li>
     <input type="radio" id="num4" name="rating" value="4" on:change={onChange} checked={selected === 4} />
-    <label for="num4">4</label>
+    <label for="num4"><span>4</span></label>
   </li>
   <li>
     <input type="radio" id="num5" name="rating" value="5" on:change={onChange} checked={selected === 5} />
-    <label for="num5">5</label>
+    <label for="num5"><span>5</span></label>
   </li>
   <li>
     <input type="radio" id="num6" name="rating" value="6" on:change={onChange} checked={selected === 6} />
-    <label for="num6">6</label>
+    <label for="num6"><span>6</span></label>
   </li>
   <li>
     <input type="radio" id="num7" name="rating" value="7" on:change={onChange} checked={selected === 7} />
-    <label for="num7">7</label>
+    <label for="num7"><span>7</span></label>
   </li>
   <li>
     <input type="radio" id="num8" name="rating" value="8" on:change={onChange} checked={selected === 8} />
-    <label for="num8">8</label>
+    <label for="num8"><span>8</span></label>
   </li>
   <li>
     <input type="radio" id="num9" name="rating" value="9" on:change={onChange} checked={selected === 9} />
-    <label for="num9">9</label>
+    <label for="num9"><span>9</span></label>
   </li>
   <li>
     <input type="radio" id="num10" name="rating" value="10" on:change={onChange} checked={selected === 10} />
-    <label for="num10">10</label>
+    <label for="num10"><span class="ten">10</span></label>
   </li>
 </ul>
 
@@ -102,5 +102,34 @@
     background: #ff6a95;
     background: #c788ea;
     color: #fff;
+  }
+
+  @media (max-width: 689px) {
+    .ten {
+      right: 1px;
+      position: relative;
+    }
+    .rating li {
+      width: 22px;
+      height: 22px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 9px;
+    }
+    .rating li label {
+      top: 27%;
+      width: 25px;
+      height: 25px;
+    }
+
+    [type="radio"]:checked ~ label {
+      top: 40%;
+    }
+
+    [type="radio"]:checked ~ label span {
+      bottom: 45%;
+      position: relative;
+      /* color: aqua; */
+    }
   }
 </style>

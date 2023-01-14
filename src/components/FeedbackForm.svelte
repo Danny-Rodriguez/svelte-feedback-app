@@ -49,7 +49,7 @@
   <form on:submit|preventDefault={handleSubmit}>
     <RatingSelect on:rating-select={handleSelect} />
     <div class="input-group">
-      <input type="text" on:input={handleInput} bind:value={text} placeholder="Tell us something that keeps you coming back" />
+      <input type="text" on:input={handleInput} bind:value={text} class="tell-us" placeholder="Tell us something that keeps you coming back" />
       <Button disabled={btnDisabled} type="submit">Send</Button>
     </div>
     {#if message}
@@ -96,5 +96,17 @@
     text-align: center;
     color: rebeccapurple;
     /* color: green; */
+  }
+
+  @media (max-width: 689px) {
+    .tell-us {
+      font-size: xx-small;
+    }
+
+    :global(.input-group > Button) {
+      width: 26px !important;
+      height: 18px !important;
+      font-size: 9px !important;
+    }
   }
 </style>
