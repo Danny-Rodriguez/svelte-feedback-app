@@ -4,9 +4,9 @@
 
   const dispatch = createEventDispatcher();
 
-  const onChange = () => {
+  const onChange = e => {
     selected = e.currentTarget.value;
-    dispatch("rating=select", selected);
+    dispatch("rating-select", selected);
   };
 </script>
 
